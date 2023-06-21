@@ -14,7 +14,7 @@ import java.util.Map.Entry;
 public interface Map<K,V>{
     int size();
     boolean isEmpty();
-    V grt(K key);
+    V get(K key);
     V put(K key,V value);
     V remove(K key);
     Iterable<K>keySet();

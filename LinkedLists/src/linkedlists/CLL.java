@@ -26,7 +26,7 @@ public class CLL<E> {
     
     public int size(){return size;}
     
-    public boolean isEmpty(){return size==0;}
+    public boolean isEmpty(){ return size==0; }
     
     public E first(){
     if(isEmpty())return null;
@@ -69,7 +69,7 @@ public class CLL<E> {
             System.out.println("This list is empty");
         else{
             System.out.println("Contents:\t");
-            Node cur=tail;
+            Node<E> cur=tail;
             for(int i=0;i<size;i++){
                 System.out.print(cur.getElement()+" --> ");
                 cur=cur.getNext();

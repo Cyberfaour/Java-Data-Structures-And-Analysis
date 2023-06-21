@@ -101,8 +101,11 @@ public class SLL<E>{    //here we create a generic singly linked list
             System.out.println("This list is empty");
         else{
             System.out.println("Contents:\t");
-            Node cur=this.head;
+            Node<E> cur=this.head;
             for(int i=0;i<size;i++){
+                if(cur.getElement()==null )
+                System.out.print("null"+" --> ");
+
                 System.out.print(cur.getElement()+" --> ");
                 cur=cur.getNext();
             }

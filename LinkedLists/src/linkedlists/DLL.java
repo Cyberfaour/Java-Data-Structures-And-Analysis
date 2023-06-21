@@ -98,7 +98,7 @@ public class DLL<E>{
             System.out.println("This list is empty");
         else{
             System.out.println("Contents:\t");
-            Node cur=header;
+            Node<E> cur=header;
             for(int i=0;i<size;i++){
                 System.out.print(cur.getElement()+" --> ");
                 cur=cur.getNext();

@@ -15,43 +15,77 @@ public class LinkedLists {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        SLL sll=new SLL();
-        sll.addFirst(14);
-        sll.addLast(-9);
-        sll.addLast(7);
-        sll.addLast(5);sll.addLast(2);sll.addLast(1);sll.addLast(2);sll.addLast(3);sll.addLast(8);
-        sll.addLast(11);sll.addLast(14);sll.addLast(15);sll.addLast(19);sll.addLast(20);
-        sll.addLast(40);sll.addLast(34);sll.addLast(32);sll.addLast(26);sll.addLast(23);
+        SLL<Integer> linkedList = new SLL<>();
+        linkedList.addFirst(3);
+        linkedList.addFirst(2);
+        linkedList.addFirst(1);
+        linkedList.addLast(4);
+        linkedList.addLast(5);
+
+        // // System.out.println("Size: " + linkedList.size()); // Output: 5
+        // // System.out.println("First: " + linkedList.first()); // Output: 1
+        // // System.out.println("Last: " + linkedList.last()); // Output: 5
+
+        // // linkedList.print(); // Output: 1 --> 2 --> 3 --> 4 --> 5 -->
+
+        // linkedList.removeEvery(); // Removes every second element
+
+        // // linkedList.print(); // Output: 1 --> 3 --> 5 -->
+
+        // linkedList.removeFirst();
+        // linkedList.removeLast();
+
+        // // linkedList.print(); // Output: 3 -->
+
+        // System.out.println("Size: " + linkedList.size()); // Output: 1
+        // System.out.println("First: " + linkedList.first()); // Output: 3
+        // System.out.println("Last: " + linkedList.last()); // Output: 3
+        // DLL<Integer> doublyLinkedList = new DLL<>();
+
+        // doublyLinkedList.addFirst(3);
+        // doublyLinkedList.addFirst(2);
+        // doublyLinkedList.addFirst(1);
+        // doublyLinkedList.addLast(4);
+        // doublyLinkedList.addLast(5);
+
+        // System.out.println("Size: " + doublyLinkedList.size()); // Output: 5
+        // System.out.println("First: " + doublyLinkedList.first()); // Output: 1
+        // System.out.println("Last: " + doublyLinkedList.last()); // Output: 5
+
+        // doublyLinkedList.print(); // Output: 1 --> 2 --> 3 --> 4 --> 5 -->
+
+        // doublyLinkedList.removeFirst();
+        // doublyLinkedList.removeLast();
+
+        // doublyLinkedList.print(); // Output: 2 --> 3 --> 4 -->
+
+        // System.out.println("Size: " + doublyLinkedList.size()); // Output: 3
+        // System.out.println("First: " + doublyLinkedList.first()); // Output: 2
+        // System.out.println("Last: " + doublyLinkedList.last()); // Output: 4
         
-        sll.print();
-//        sll.removeEvery();
-//        sll.print();
-//        SLL sll1=new SLL();
-//        SLL sll2=new SLL();
-//        for(int i=sll.size()-1;i>0;i--){
-//            sll2.addLast(sll.removeLast());
-//            System.out.println("\n");
-//         }
-//       sll2.print();
-     DLL dll=new DLL();
-     dll.addFirst("s");
-     dll.addFirst(34);
-     dll.addLast(123);
-     dll.addFirst("car");
-     dll.addFirst("hello");
-    
-     dll.print();
-        CLL cll=new CLL();
-        
-        cll.addFirst(14);
-        cll.addFirst(434);
-        cll.addFirst(21);
-        cll.addLast(212);
-        cll.print();
-        cll.rotate();
-        cll.print();
-        
+        CLL<Integer> circularLinkedList = new CLL<>();
+
+        circularLinkedList.addFirst(3);
+        circularLinkedList.addFirst(2);
+        circularLinkedList.addFirst(1);
+        circularLinkedList.addLast(4);
+        circularLinkedList.addLast(5);
+
+        System.out.println("Size: " + circularLinkedList.size()); // Output: 5
+        System.out.println("First: " + circularLinkedList.first()); // Output: 1
+        System.out.println("Last: " + circularLinkedList.last()); // Output: 5
+
+        circularLinkedList.print(); // Output: 1 --> 2 --> 3 --> 4 --> 5 -->
+
+        circularLinkedList.rotate();
+
+        System.out.println("First after rotate: " + circularLinkedList.first()); // Output: 2
+
+        circularLinkedList.removefirst();
+
+        System.out.println("Size: " + circularLinkedList.size()); // Output: 4
+
+        circularLinkedList.print(); // Output: 2 --> 3 --> 4 --> 5 -->
     }
     
 }
